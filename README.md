@@ -50,7 +50,7 @@ Run from the repository root. `scripts/run_all.sh` downloads the selected source
 - Saliency is qualitative, not causal or clinically validated.
 - The user-provided `ecg_split.npz` was not used: it contains arrays but no record/patient provenance, so its split independence and labels cannot be audited against the required DS1/DS2 protocol.
 
-## Resume bullets (based on this run)
+## Output
 
 - Built a reproducible PyTorch 1D CNN for patient-independent MIT-BIH heartbeat classification; achieved **0.857 ROC-AUC and 0.716 PR-AUC** on 50,612 held-out beats.
 - Implemented WFDB acquisition, 0.5–40 Hz filtering, 0.7-second beat normalization, weighted-loss training, early stopping, and saliency visualization across 43 analyzed records.
